@@ -17,70 +17,70 @@ const restaurants = [
     name: "The Green Bowl",
     rating: 4.5,
     type: "Veg",
-    image: "./src/assets/images/veg_1.webp",
+    image: "../veg_1.webp",
   },
   {
     id: 2,
     name: "Grill & Chill",
     rating: 4.0,
     type: "Non-Veg",
-    image: "./src/assets/images/non_veg_1.jpg",
+    image: "../non_veg_1.jpg",
   },
   {
     id: 3,
     name: "Spice Villa",
     rating: 4.2,
     type: "Veg",
-    image: "./src/assets/images/veg_2.webp",
+    image: "../veg_2.webp",
   },
   {
     id: 4,
     name: "Fresher's Delight",
     rating: 4.8,
     type: "Non-Veg",
-    image: "./src/assets/images/non_veg_3.jpg",
+    image: "../non_veg_3.jpg",
   },
   {
     id: 5,
     name: "Roti Boti",
     rating: 3.5,
     type: "Non-Veg",
-    image: "./src/assets/images/ChickenTikka.jpg",
+    image: "../ChickenTikka.jpg",
   },
   {
     id: 6,
     name: "Dinner Bell",
     rating: 4,
     type: "Veg",
-    image: "./src/assets/images/paratha.webp",
+    image: "../paratha.webp",
   },
   {
     id: 7,
     name: "Desi Jaika",
     rating: 2,
     type: "Veg",
-    image: "./src/assets/images/dosa.webp",
+    image: "../dosa.webp",
   },
   {
     id: 8,
     name: "Ocean 11",
     rating: 4.5,
     type: "Non-Veg",
-    image: "./src/assets/images/chiken_biryani.avif",
+    image: "../chiken_biryani.avif",
   },
   {
     id: 9,
     name: "Avantika Dining",
     rating: 4.8,
     type: "Non-Veg",
-    image: "./src/assets/images/fish_fry.jpg",
+    image: "../fish_fry.jpg",
   },
   {
     id: 10,
     name: "Mama's Kitchen",
     rating: 5,
     type: "Veg",
-    image: "./src/assets/images/rajma-chawal.avif",
+    image: "../rajma-chawal.avif",
   },
 
 ];
@@ -124,6 +124,8 @@ function Dashboard() {
         color="black"
         fontStyle={"italic"}
         fontFamily={"Droid Sans"}
+        fontWeight={"bold"}
+        fontSize={{ xs: "2rem", sm: "3rem" }}
         my={6}
       >
         Hunger's Lane
