@@ -8,12 +8,27 @@
   </head>
   <body>
     <div id="root"></div>
-    <script>
+    <!-- <script>
       window.ChatWidgetSettings = {
         propertyId: "client-12345",
       };
     </script>
-    <script src="https://chat-widget-ashen.vercel.app/widget-loader.js"></script>
+    <script src="https://chat-widget-ashen.vercel.app/widget-loader.js"></script> -->
+
+    <script>
+      window.WidgetSettings = { propertyId: "client-12345" };
+
+      (function () {
+        const script = document.createElement("script");
+        script.src = "https://react-chat-widget-eight.vercel.app/static/js/main.12288628.js";
+        script.async = true;
+        script.onload = () => {
+          window.renderChatWidget(window.WidgetSettings);
+        };
+        document.head.appendChild(script);
+      })();
+    </script>
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
