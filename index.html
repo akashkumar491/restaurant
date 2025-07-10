@@ -19,8 +19,17 @@
       window.WidgetSettings = { propertyId: "client-12345" };
 
       (function () {
+        // CSS
+        const link = document.createElement("link");
+        link.rel = "stylesheet";
+        link.href =
+          "https://react-chat-widget-eight.vercel.app/static/css/main.6054ba7f.css"; // <-- Update this!
+        document.head.appendChild(link);
+
+        // JS
         const script = document.createElement("script");
-        script.src = "https://react-chat-widget-eight.vercel.app/static/js/main.12288628.js";
+        script.src =
+          "https://react-chat-widget-eight.vercel.app/static/js/main.12288628.js";
         script.async = true;
         script.onload = () => {
           window.renderChatWidget(window.WidgetSettings);
